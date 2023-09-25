@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+  }
+  
+  .text-3d {
+    display: inline-block;
+    font-size: 60px;
+    color: #00ff00;
+    perspective: 1000px;
+  }
+  
+  .letter {
+    display: inline-block;
+    transform: translateZ(0);
+    animation: rotateAnimation 5s linear infinite;
+  }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: translateZ(0) rotateY(0deg);
+    }
+    100% {
+      transform: translateZ(250px) rotateY(360deg);
+    }
+  }
+  
